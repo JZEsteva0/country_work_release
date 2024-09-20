@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:country_work/pages/homePage.dart';
+import 'package:get/get.dart';
 
-
-void main() async {
-  
-  runApp(MaterialApp(
-    home: HomePage(),
-  ));
-  
-} 
+Future<void> main() async {
+  runApp(
+    GetMaterialApp(
+      home: HomePage(),
+      ),
+);
+}
